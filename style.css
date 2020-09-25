@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container .clicker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .clicker h2 {
+    color: white;
+    font-family: sans-serif;
+}
+.container .clicker button {
+    width: 200px;
+    height: 100px;
+    background-color: tomato;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    transition: 300ms;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.container .clicker button:hover {
+    background-color: firebrick;
+}
+
+.container .records {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.container .records h3 {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+.container .records ul {
+    list-style-type: none;
+}
+.container .records ul li {
+    color: white;
+    font-family: sans-serif;
+}
+.container .records ul li span {
+    font-weight: 500;
+    font-size: large;
+}
+.container .records .reset-container {
+    display: flex;
+    justify-content: center;
+}
+.container .records .reset-container .reset-button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    transition: 200ms;
+    cursor: pointer;
+}
+.container .records .reset-container .reset-button:hover {
+    background-color: tomato;
+    color: black;
+}
